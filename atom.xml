@@ -3,18 +3,18 @@
   <title>Huang Fan</title>
   
   <subtitle>Homepage</subtitle>
-  <link href="http://huangfan0.github.io/myblog/atom.xml" rel="self"/>
+  <link href="http://huangfan0.github.io/atom.xml" rel="self"/>
   
-  <link href="http://huangfan0.github.io/myblog/"/>
+  <link href="http://huangfan0.github.io/"/>
   <updated>2024-04-15T13:43:28.734Z</updated>
-  <id>http://huangfan0.github.io/myblog/</id>
+  <id>http://huangfan0.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>test first blog post</title>
-    <link href="http://huangfan0.github.io/myblog/2024/04/08/test-first-blog-post/"/>
-    <id>http://huangfan0.github.io/myblog/2024/04/08/test-first-blog-post/</id>
+    <link href="http://huangfan0.github.io/2024/04/08/test-first-blog-post/"/>
+    <id>http://huangfan0.github.io/2024/04/08/test-first-blog-post/</id>
     <published>2024-04-08T12:34:55.000Z</published>
     <updated>2024-04-15T13:43:28.734Z</updated>
     
@@ -26,8 +26,8 @@
   
   <entry>
     <title>总结报告</title>
-    <link href="http://huangfan0.github.io/myblog/2024/03/25/build_blog/"/>
-    <id>http://huangfan0.github.io/myblog/2024/03/25/build_blog/</id>
+    <link href="http://huangfan0.github.io/2024/03/25/build_blog/"/>
+    <id>http://huangfan0.github.io/2024/03/25/build_blog/</id>
     <published>2024-03-25T13:42:26.702Z</published>
     <updated>2024-04-16T13:38:17.437Z</updated>
     
@@ -42,10 +42,10 @@
     
     
     
-    <category term="blog" scheme="http://huangfan0.github.io/myblog/categories/blog/"/>
+    <category term="blog" scheme="http://huangfan0.github.io/categories/blog/"/>
     
     
-    <category term="blog" scheme="http://huangfan0.github.io/myblog/tags/blog/"/>
+    <category term="blog" scheme="http://huangfan0.github.io/tags/blog/"/>
     
   </entry>
   
