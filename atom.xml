@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Huang Fan</title>
+  
+  <subtitle>Homepage</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-04-15T13:43:28.734Z</updated>
+  <id>http://example.com/</id>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test first blog post</title>
+    <link href="http://example.com/2024/04/08/test-first-blog-post/"/>
+    <id>http://example.com/2024/04/08/test-first-blog-post/</id>
+    <published>2024-04-08T12:34:55.000Z</published>
+    <updated>2024-04-15T13:43:28.734Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>总结报告</title>
+    <link href="http://example.com/2024/03/25/build_blog/"/>
+    <id>http://example.com/2024/03/25/build_blog/</id>
+    <published>2024-03-25T13:42:26.702Z</published>
+    <updated>2024-04-16T12:34:39.581Z</updated>
+    
+    <content type="html"><![CDATA[<p>本次博客搭建流程大概分为3个步骤，分别是环境搭建，功能设计与实现和环境部署</p><span id="more"></span><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="框架选择"><a href="#框架选择" class="headerlink" title="框架选择"></a>框架选择</h3><p>由于之前配置hyperCRX的环境已经安装了nodejs,所以就选择了Hexo框架。在配置hexo环境时遇到报错<br>bash: hexo: command not found<br>先检查了node和npm是否安装成功，然后发现与nodejs安装过程一样，需要配置系统环境变量才行，将node_modules下的.bin路径添加到path环境中即可</p><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本次博客搭建流程大概分为3个步骤，分别是环境搭建，功能设计与实现和环境部署&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="http://example.com/categories/blog/"/>
+    
+    
+    <category term="blog" scheme="http://example.com/tags/blog/"/>
+    
+  </entry>
+  
+</feed>

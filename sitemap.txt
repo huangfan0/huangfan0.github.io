@@ -1,0 +1,9 @@
+http://example.com/2024/03/25/build_blog/
+http://example.com/about/index.html
+http://example.com/tags/index.html
+http://example.com/categories/index.html
+http://example.com/2024/04/08/test-first-blog-post/
+http://example.com/
+http://example.com/tags/blog/
+http://example.com/tags/blog/
+http://example.com/categories/blog/
