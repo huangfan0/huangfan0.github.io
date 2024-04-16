@@ -1,8 +1,8 @@
-http://huangfan0.github.io/2024/03/25/build_blog/
-http://huangfan0.github.io/about/index.html
-http://huangfan0.github.io/tags/index.html
-http://huangfan0.github.io/categories/index.html
-http://huangfan0.github.io/2024/04/08/test-first-blog-post/
-http://huangfan0.github.io/
-http://huangfan0.github.io/tags/blog/
-http://huangfan0.github.io/categories/blog/
+https://huangfan0.github.io/2024/03/25/build_blog/
+https://huangfan0.github.io/about/index.html
+https://huangfan0.github.io/tags/index.html
+https://huangfan0.github.io/categories/index.html
+https://huangfan0.github.io/2024/04/08/test-first-blog-post/
+https://huangfan0.github.io/
+https://huangfan0.github.io/tags/blog/
+https://huangfan0.github.io/categories/blog/
