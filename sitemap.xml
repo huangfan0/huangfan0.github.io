@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2024/03/25/build_blog/</loc>
+    <loc>http://huangfan0.github.io/myblog/2024/03/25/build_blog/</loc>
     
     <lastmod>2024-04-16</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>http://huangfan0.github.io/myblog/about/index.html</loc>
     
     <lastmod>2024-04-16</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://huangfan0.github.io/myblog/tags/index.html</loc>
     
     <lastmod>2024-04-15</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>http://huangfan0.github.io/myblog/categories/index.html</loc>
     
     <lastmod>2024-04-15</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2024/04/08/test-first-blog-post/</loc>
+    <loc>http://huangfan0.github.io/myblog/2024/04/08/test-first-blog-post/</loc>
     
     <lastmod>2024-04-15</lastmod>
     
@@ -48,7 +48,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>http://huangfan0.github.io/myblog</loc>
     <lastmod>2024-04-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -56,14 +56,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/blog/</loc>
-    <lastmod>2024-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/blog/</loc>
+    <loc>http://huangfan0.github.io/myblog/tags/blog/</loc>
     <lastmod>2024-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -72,7 +65,7 @@
 
   
   <url>
-    <loc>http://example.com/categories/blog/</loc>
+    <loc>http://huangfan0.github.io/myblog/categories/blog/</loc>
     <lastmod>2024-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -1,9 +1,8 @@
-http://example.com/2024/03/25/build_blog/
-http://example.com/about/index.html
-http://example.com/tags/index.html
-http://example.com/categories/index.html
-http://example.com/2024/04/08/test-first-blog-post/
-http://example.com/
-http://example.com/tags/blog/
-http://example.com/tags/blog/
-http://example.com/categories/blog/
+http://huangfan0.github.io/myblog/2024/03/25/build_blog/
+http://huangfan0.github.io/myblog/about/index.html
+http://huangfan0.github.io/myblog/tags/index.html
+http://huangfan0.github.io/myblog/categories/index.html
+http://huangfan0.github.io/myblog/2024/04/08/test-first-blog-post/
+http://huangfan0.github.io/myblog
+http://huangfan0.github.io/myblog/tags/blog/
+http://huangfan0.github.io/myblog/categories/blog/
