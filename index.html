@@ -270,7 +270,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-16 23:08:36" itemprop="dateModified" datetime="2024-04-16T23:08:36+08:00">2024-04-16</time>
+      <time title="修改时间：2024-04-18 20:52:40" itemprop="dateModified" datetime="2024-04-18T20:52:40+08:00">2024-04-18</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -296,7 +296,7 @@
 <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>前期工作包括配置git，nodejs的环境。</p>
 <h4 id="框架选择"><a href="#框架选择" class="headerlink" title="框架选择"></a>框架选择</h4><p>由于之前配置hyperCRX的环境已经安装了nodejs,所以就选择了Hexo框架。在安装好hexo环境有遇到报错<br>bash: hexo: command not found<br>先检查了node和npm是否安装成功，然后发现与nodejs安装过程一样，需要配置系统环境变量才行，将node_modules下的.bin路径添加到path环境中即可</p>
 <h4 id="博客主题选择"><a href="#博客主题选择" class="headerlink" title="博客主题选择"></a>博客主题选择</h4><p>博客主题选择了hexo下的next主题，因为简洁，参考的开发文档比较齐全。</p>
-<h2 id="功能设计与实现"><a href="#功能设计与实现" class="headerlink" title="功能设计与实现"></a>功能设计与实现</h2><h4 id="页面布局以及设计思路"><a href="#页面布局以及设计思路" class="headerlink" title="页面布局以及设计思路"></a>页面布局以及设计思路</h4><p>博客共设计了首页（文章列表），标签，分类，归档和我的五个静态页面，生成新的静态页面使用hexo new 命令，对于tag和catagories页面需要修改对应index.md对应的属性，然后在全局config配置中中加入对应的跳转指令即可。基本个人的信息也是在全局config中修改，这是站点配置文件；在next主题下也有config文件，这是主题配置文件。</p>
+<h2 id="功能设计与实现"><a href="#功能设计与实现" class="headerlink" title="功能设计与实现"></a>功能设计与实现</h2><h4 id="页面布局以及实现"><a href="#页面布局以及实现" class="headerlink" title="页面布局以及实现"></a>页面布局以及实现</h4><p>博客共设计了首页（文章列表），标签，分类，归档和我的五个静态页面，生成新的静态页面使用hexo new 命令，对于tag和catagories页面需要修改对应index.md对应的属性，然后在全局config配置中中加入对应的跳转指令即可。基本个人的信息也是在全局config中修改，这是站点配置文件；在next主题下也有config文件，这是主题配置文件。对于博客主题样式的修改，如添加背景图片，网站logo图片和GitHub链接等样式修改是这next的主题配置文件中修改的。</p>
 <h4 id="页面美化"><a href="#页面美化" class="headerlink" title="页面美化"></a>页面美化</h4><p>首页若不加修饰会展示文章的所有内容，只展示部分内容需要加入页面截断，可以在需要截断的地方加入下面的代码示例</p>
 <hr>
 <pre><code>&lt;!--more--&gt;
