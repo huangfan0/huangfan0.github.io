@@ -1,6 +1,32 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title:  # "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+Hi, I am a second-year graduate student in the School of East China Normal University (ECNU), advised by Prof. WeiWang. Before joining ECNU, I received my B.S in the school of Shanghai University of Shanghai for Science and Technology in 2023.
+
+my research interests primary focus on graph learning and AI4Science. I have conducted some research about open source collaborative networks in influence maxmization and Benchmark including link prediction and recommendation systems.
+
+I am actively seeking an academic cooperation opportunities and a doctoral position in recommendation, AI4Science to further explore the GNN, LLM, Diffusion and intersection of artificial intelligence.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---
+permalink: /
+title: "Fan Huang"
 author_profile: true
 redirect_from: 
   - /about/
@@ -46,4 +72,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
