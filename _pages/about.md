@@ -6,13 +6,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, I am a second-year graduate student in the School of East China Normal University (ECNU), advised by Prof. WeiWang. Before joining ECNU, I received my B.S in the school of Shanghai University of Shanghai for Science and Technology in 2023.
+## About me 
 
-my research interests primary focus on graph learning and AI4Science. I have conducted some research about open source collaborative networks in influence maxmization and Benchmark including link prediction and recommendation systems.
+Hi, I am a second-year master student in the School of East China Normal University (ECNU), advised by Prof. WeiWang. Before joining ECNU, I received my B.S in the school of Shanghai University of Shanghai for Science and Technology in 2023.
 
-I am actively seeking an academic cooperation opportunities and a doctoral position in recommendation, AI4Science to further explore the GNN, LLM, Diffusion and intersection of artificial intelligence.
+my research interests focus on graph learning, Recommender Systems, recommendation and diffusion.
 
+I am actively seeking an academic cooperation opportunities and a doctoral position.
 
+<!-- 
 <iframe src="https://github.com/huangfan0/huangfan0.github.io/files/01cv.pdf" width="600" height="400"></iframe>
  this is my [cv](https://github.com/huangfan0/huangfan0.github.io/files/01cv.pdf)
  `https://github.com/huangfan0/huangfan0.github.io/files/01cv.pdf`
@@ -28,7 +30,7 @@ I am actively seeking an academic cooperation opportunities and a doctoral posit
 
 xthis is my [cv](/files/01cv.pdf)
 ?this is my [cv](./files/01cv.pdf)
-ythis is my [cv](../files/01cv.pdf)
+ythis is my [cv](../files/01cv.pdf) -->
 
 
 

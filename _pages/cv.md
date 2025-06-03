@@ -7,9 +7,12 @@ redirect_from:
   - /resume
 ---
 
+
+
+<iframe src="/files/01cv.pdf" width="800" height="900"></iframe>
 {% include base_path %}
 
-Education
+<!-- Education
 ======
 this is my cv
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
@@ -62,4 +65,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
