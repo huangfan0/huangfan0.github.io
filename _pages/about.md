@@ -17,6 +17,11 @@ I am actively seeking an academic cooperation opportunities and a doctoral posit
 ## News
 ● The paper "Diffusion-augmented Graph Contrastive Learning
 for Collaborative Filtering" is released on arXiv, March 2025
+
+
+
+
+
 <!-- 
 <iframe src="https://github.com/huangfan0/huangfan0.github.io/files/01cv.pdf" width="600" height="400"></iframe>
  this is my [cv](https://github.com/huangfan0/huangfan0.github.io/files/01cv.pdf)
