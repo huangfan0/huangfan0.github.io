@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Fan Huang / Site Title"
+title                    : "Fan Huang's Homepage"
 title_separator          : "-"
 name                     : &name "Fan Huang's Homepage"
 # description              : &description "personal description"
