@@ -1,6 +1,6 @@
 ---
 title: 'Generative Recommendation with Continuous-Token Diffusion'
-date: 2199-01-01
+date: 2025-06-03
 permalink: /posts/2012/08/blog-post-4/
 tags:
   - GNN
@@ -21,7 +21,7 @@ tags:
 所以论文想要从continuous representation的角度生成连续的token。论文使用diffusion来解决连续的表示。
 
 ## 方法
-![本地图片](./images/1-1.png)
+![method](https://github.com/huangfan0/huangfan0.github.io/blob/master/images/1-1.png "method")
 
 整体流程为：1交互矩阵通过GNN编码得到初步的协同过滤的向量表示
 2.Additive Continuous Tokenizer：使用masking operation和K-way  architecture 把第一步中的向量变为连续向量
@@ -40,3 +40,25 @@ tags:
 
 5 Hybrid Item Retriever
 
+
+
+<!-- ---
+title: 'Blog Post number 4'
+date: 2015-08-14
+permalink: /posts/2012/08/blog-post-4/
+tags:
+  - cool posts
+  - category1
+  - category2
+---
+
+This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
+
+Headings are cool
+======
+
+You can have many headings
+======
+
+Aren't headings cool?
+------ -->
