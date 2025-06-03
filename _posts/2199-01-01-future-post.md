@@ -22,6 +22,8 @@ tags:
 
 ## 方法
 ![method](https://github.com/huangfan0/huangfan0.github.io/blob/master/images/1-1.png "method")
+![method](https://github.com/huangfan0/huangfan0.github.io/blob/master/images/1-1.png)
+
 
 整体流程为：1交互矩阵通过GNN编码得到初步的协同过滤的向量表示
 2.Additive Continuous Tokenizer：使用masking operation和K-way  architecture 把第一步中的向量变为连续向量
