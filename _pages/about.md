@@ -6,6 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+## About me
 Hi, I am a second-year master student in the School of East China Normal University (ECNU). Before joining ECNU, I received my B.S in the school of Shanghai University of Shanghai for Science and Technology in 2023.
 
 my research interests focus on graph learning, Recommender Systems, recommendation and diffusion.
