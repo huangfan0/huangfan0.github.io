@@ -1,7 +1,7 @@
 ---
 title: 'Generative Recommendation with Continuous-Token Diffusion'
 date: 2025-06-03
-permalink: /posts/2012/08/blog-post-4/
+permalink: /posts/2025/06/03
 tags:
   - GNN
   - Recommendation
@@ -46,6 +46,9 @@ tags:
 title: 'Blog Post number 4'
 date: 2015-08-14
 permalink: /posts/2012/08/blog-post-4/
+
+permalink: /posts/2012/08/blog-post-4/
+
 tags:
   - cool posts
   - category1
