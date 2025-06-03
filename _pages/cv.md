@@ -1,19 +1,4 @@
--- ---
-layout: archive
-title: "CV"
-permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
 ---
-<iframe src="https://github.com/huangfan0/huangfan0.github.io/blob/master/files/01cv.pdf" width="600" height="400"></iframe>
-
-=====================
-
- this is my [cv](https://github.com/huangfan0/huangfan0.github.io/blob/master/files/01cv.pdf)
-
-
-<!-- ---
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -26,6 +11,7 @@ redirect_from:
 
 Education
 ======
+this is my cv
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 * M.S. in Jekyll, GitHub University, 2014
 * B.S. in GitHub, GitHub University, 2012
@@ -76,4 +62,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams -->
+* Currently signed in to 43 different slack teams
