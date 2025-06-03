@@ -1,4 +1,8 @@
----
+<iframe src="./file/01cv.pdf" width="600" height="400"></iframe>
+
+
+
+<!-- ---
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -61,4 +65,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
