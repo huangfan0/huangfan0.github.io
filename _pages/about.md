@@ -19,13 +19,11 @@ I am actively seeking an academic cooperation opportunities and a doctoral posit
 
 
 
----relative--
 
-x
 <iframe src="/files/01cv.pdf" width="600" height="400"></iframe>
-?
+
 <iframe src="./files/01cv.pdf" width="600" height="400"></iframe>
-y
+
 <iframe src="../files/01cv.pdf" width="600" height="400"></iframe>
 
 xthis is my [cv](/files/01cv.pdf)
