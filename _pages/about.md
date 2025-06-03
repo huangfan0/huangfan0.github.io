@@ -13,6 +13,9 @@ my research interests primary focus on graph learning and AI4Science. I have con
 I am actively seeking an academic cooperation opportunities and a doctoral position in recommendation, AI4Science to further explore the GNN, LLM, Diffusion and intersection of artificial intelligence.
 
 
+<iframe src="./file/01cv.pdf" width="600" height="400"></iframe>
+ this is my [cv](./file/01cv.pdf)
+
 
 
 

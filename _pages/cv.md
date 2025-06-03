@@ -8,6 +8,9 @@ redirect_from:
 ---
 <iframe src="./file/01cv.pdf" width="600" height="400"></iframe>
 
+=====================
+
+ this is my [cv](./file/01cv.pdf)
 
 
 <!-- ---
