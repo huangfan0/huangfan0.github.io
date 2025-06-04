@@ -24,6 +24,8 @@ tags:
 ![method](https://github.com/huangfan0/huangfan0.github.io/raw/master/images/1-1.png "method")
 ![method](https://github.com/huangfan0/huangfan0.github.io/raw/master/images/1-1.png)
 
+![method](https://huangfan0.github.io/images/1-1.png)
+
 ![method](images/1-1.png)
 
 ![method](./images/1-1.png)
