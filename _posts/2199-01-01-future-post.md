@@ -21,8 +21,8 @@ tags:
 所以论文想要从continuous representation的角度生成连续的token。论文使用diffusion来解决连续的表示。
 
 ## 方法
-![method](https://github.com/huangfan0/huangfan0.github.io/blob/master/images/1-1.png "method")
-![method](https://github.com/huangfan0/huangfan0.github.io/blob/master/images/1-1.png)
+![method](https://github.com/huangfan0/huangfan0.github.io/raw/master/images/1-1.png "method")
+![method](https://github.com/huangfan0/huangfan0.github.io/raw/master/images/1-1.png)
 
 ![method](images/1-1.png)
 
