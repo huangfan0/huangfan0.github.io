@@ -21,19 +21,14 @@ tags:
 所以论文想要从continuous representation的角度生成连续的token。论文使用diffusion来解决连续的表示。
 
 ## 方法
-![method](https://github.com/huangfan0/huangfan0.github.io/raw/master/images/1-1.png "method")
-![method](https://github.com/huangfan0/huangfan0.github.io/raw/master/images/1-1.png)
+<!-- ![method](https://github.com/huangfan0/huangfan0.github.io/raw/master/images/1-1.png "method")
+![method](https://github.com/huangfan0/huangfan0.github.io/raw/master/images/1-1.png) -->
 
 ![method](https://huangfan0.github.io/images/1-1.png)
 
-![method](https://raw.githubusercontent.com/huangfan0/huangfan0.github.io/master/images/1-1.png)
-
-![method](images/1-1.png)
-
-![method](./images/1-1.png)
+<!-- ![method](https://raw.githubusercontent.com/huangfan0/huangfan0.github.io/master/images/1-1.png) -->
 
 
-![method](../images/1-1.png)
 整体流程为：1交互矩阵通过GNN编码得到初步的协同过滤的向量表示
 2.Additive Continuous Tokenizer：使用masking operation和K-way  architecture 把第一步中的向量变为连续向量
 
