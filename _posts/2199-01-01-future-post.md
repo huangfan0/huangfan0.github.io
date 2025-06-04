@@ -10,7 +10,9 @@ tags:
 ---
 ## 背景
 大模型推荐范式：
+
 (1)  user&item tokenization：输入信息包括 User,item 变为tokenization，和文本信息的prompt交互
+
 (2)recommendation generation：大模型推理建模用户的偏好，使用自然语义或输出token产生合适的推荐
 
 其中user，item变为token这一步骤可以分为离散的和连续的两种方法，论文任务离散的tokenization会产生信息压缩和幻觉（information compression和hallucination）
@@ -30,21 +32,47 @@ tags:
 
 
 整体流程为：1交互矩阵通过GNN编码得到初步的协同过滤的向量表示
+
 2.Additive Continuous Tokenizer：使用masking operation和K-way  architecture 把第一步中的向量变为连续向量
 
 最终输入LLM的格式：物品标题 + <连续token_1> <连续token_2> ...
  例："Apple Vision Pro [0.12, -0.3] [0.8, 0.1]"
 
-3.Generative Recommendion with Continuous-Token Diffusion, 
+
+3.Generative Recommendion with Continuous-Token Diffusion,
+
 将第二部中得到的连续向量编码和大模型的prompt作为输入，大模型输出用户的偏好c
 (为什么不用大模型直接输出推荐结果？可能是大模型擅长语义推理，但不擅长连续空间的精准推荐，所以解释偏好的描述，提供高层的语义指导如商品的品牌，后面的diffusion才是将语义指导转化为精准的推荐信号)
 
 4.Contrastive Denoising Diffusion
+
   • 将第一步中的向量输入diffusion学习数据分布，这里除了正样本的向量还有负样本的向量。
   • 偏好C是在反向过程解噪时与噪声和步长一起作为输入，输入是原来的初始向量x0。所以这里的向量增强表示除了有推荐的协同信息，也融合了大模型输入的用户偏好信息。
   • 除了正常的推荐BPR损失，diffusion损失，正负样本的噪声预测误差也会有BPR损失。
 
 5 Hybrid Item Retriever
+
+Top-K计算复杂，使用向量相似性计算
+$s_{ij}=\dfrac{\mathbf{y}_{i}\mathbf{q}_{j}}{\|\mathbf{y}_{i}\|\|\mathbf{q}_{j}\|}\cdot(1+\pi)$，当大模型输出偏好$Z_i$符合商品时，$\pi$是是一个很小的常数，否则为0
+
+
+## 实验结果
+数据集： Software , Beauty and LastFM
+
+  • 有大模型微调的推荐系统比传统的方法性能效果要好
+
+  • 表示user，item连续token的模型（CoLLM,LlaRA）比离散的模型（P5）要好
+
+  • GNN-based 协同过滤比传统方法要好 
+
+![result](https://huangfan0.github.io/images/1-2.png)
+
+
+
+
+
+
+
 
 
 
