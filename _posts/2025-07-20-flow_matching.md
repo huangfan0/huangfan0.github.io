@@ -84,7 +84,9 @@ $$
 $$p_{t|0,1}^i(x^i|x_0, x_1) = \kappa_t \delta(x^i, x_1^i) + (1 - \kappa_t) \delta(x^i, x_0^i),$$
 
 速度的表示：
-$$ u_t^i(y^i, x^i | x_1) = \frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ \delta(y^i, x_1^i) - \delta(y^i, x^i) \right]$ $ 
+$$ 
+u_t^i(y^i, x^i | x_1) = \frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ \delta(y^i, x_1^i) - \delta(y^i, x^i) \right]
+$$ 
 
 4.损失函数的学习
 
@@ -92,14 +94,14 @@ $$
 \ell_i(x_1, x_t, t) = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ p_{1|t}(x_t^i | x_t) - \delta_{x_1^i}(x_t^i) + (1 - \delta_{x_1^i}(x_t^i)) \log p_{1|t}(x_1^i | x_t) \right]
 $$
 
-状态保持强化（当 ($$ x_t^i = x_1^i $$ ）)
+状态保持强化（当 $$ x_t^i = x_1^i $$ )
 
 $$ \text{loss}_{\text{keep}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ p_{1|t}(x_t^i | x_t) - 1 \right]$$
 
 - 当状态未变化时，最大化保持当前状态的概率
-- $$(p_{1|t}(x_t^i | x_t) \rightarrow 1)$$ 时损失最小化
+- 当概率分布满足：$$(p_{1|t}(x_t^i | x_t) \rightarrow 1)$$ 时损失最小化
 
-状态转移优化（当 ($$x_t^i \neq x_1^i$$)）
+状态转移优化（当 $$x_t^i \neq x_1^i$$）
 
 $$ \text{loss}_{\text{transfer}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \log p_{1|t}(x_1^i | x_t)$$
 
