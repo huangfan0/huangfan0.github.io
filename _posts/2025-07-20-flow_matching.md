@@ -99,7 +99,7 @@ $$
 $$ \text{loss}_{\text{keep}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ p_{1|t}(x_t^i | x_t) - 1 \right]$$
 
 - 当状态未变化时，最大化保持当前状态的概率
-- 当概率分布满足：$$(p_{1|t}(x_t^i | x_t) \rightarrow 1)$$ 时损失最小化
+- 当概率分布满足：$$p_{1 \mid t}(x_t^i \mid x_t) \to 1$$ 时损失最小化
 
 状态转移优化（当 $$x_t^i \neq x_1^i$$）
 
