@@ -10,7 +10,7 @@ tags:
 
 ## 一.背景介绍
 
-flow matching 本质是一种流映射关系，建立一个源分布与目标分布的映射模型，具体是通过学习概率路径$p_t(x)$和速度场（向量场）$v_t(x)$来链接源分布于目标分布, 流flow表示为$\phi_t(x)$,他们之间的关系可以表示为：
+flow matching 本质是一种流映射关系，建立一个源分布与目标分布的映射模型，具体是通过学习概率路径\[p_t(x)\]和速度场（向量场）\[v_t(x)\]来链接源分布于目标分布, 流flow表示为$\phi_t(x)$,他们之间的关系可以表示为：
 $$
 \frac{d\phi_t(x)}{dt} = \mathbf{v}(\phi_t(x), t)
 $$
@@ -18,13 +18,14 @@ $$
 
 ![method](https://huangfan0.github.io/images/2-1.png)
 
-## 二. continuous flow matching
+## 二. Continuous Flow Matching
 
 1.Continuous Normalizing Flow(CNF)学习的目标函数为速度场，但是真实的目标分布未知，所以论文证明带条件的速度场与目标速度场等价，即：
 
 $$
 \mathcal{L}_{\text{FM}}(\theta) = \mathbb{E}_{t,X_t} \left\| u_t^\theta(X_t) - u_t(X_t) \right\|^2, \text{ where } t \sim \mathcal{U}[0,1] \text{ and } X_t \sim p_t,
 $$
+
 $$
 \mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{t,q(x_1),p_t(x|x_1)} \left\| v_t(x) - u_t(x|x_1) \right\|^2,
 $$
@@ -43,11 +44,12 @@ $$u_t(x|x_1) = \frac{x_1 - (1 - \sigma_{\min})x}{1 - (1 - \sigma_{\min})t},u_t(x
 $$u(z_t, r, t) = \underbrace{v(z_t, t)}_{\text{instant. vel.}} - (t - r) \underbrace{\frac{d}{dt}u(z_t, r, t)}_{\text{time derivative}}$$
 
 $$\mathcal{L}(\theta) = \mathbb{E} \left\| u_{\theta}(z_t, r, t) - \text{sg}(u_{\text{tgt}}) \right\|_2^2,
-
+$$
+$$
 \text{where} \quad u_{\text{tgt}} = v(z_t, t) - (t - r) \left( v(z_t, t) \partial_z u_{\theta} + \partial_t u_{\theta} \right),$$
 3.最简单的CNF流程
 
-① 线性插值采样  $X_t = tX_1 + (1 - t)X_0 \sim p_t.$
+① 线性插值采样   $X_t = tX_1 + (1 - t)X_0 \sim p_t.$
 
 ② 神经网络拟合学习速度场，学习目标函数
 
@@ -72,20 +74,23 @@ $$
 
 3.离散的flow习惯学习的路径，通过路径可以推断速度然后采样
 
-路径的表示：$p_{t|0,1}^i(x^i|x_0, x_1) = \kappa_t \delta(x^i, x_1^i) + (1 - \kappa_t) \delta(x^i, x_0^i),$
+路径的表示：
+$p_{t|0,1}^i(x^i|x_0, x_1) = \kappa_t \delta(x^i, x_1^i) + (1 - \kappa_t) \delta(x^i, x_0^i),$
 
-速度的表示：$ u_t^i(y^i, x^i | x_1) = \frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ \delta(y^i, x_1^i) - \delta(y^i, x^i) \right] $ 
+速度的表示：
+$ u_t^i(y^i, x^i | x_1) = \frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ \delta(y^i, x_1^i) - \delta(y^i, x^i) \right] $ 
 
 4.损失函数的学习
 $$
 \ell_i(x_1, x_t, t) = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ p_{1|t}(x_t^i | x_t) - \delta_{x_1^i}(x_t^i) + (1 - \delta_{x_1^i}(x_t^i)) \log p_{1|t}(x_1^i | x_t) \right]
 $$
+
 状态保持强化（当 ($x_t^i = x_1^i$）)
 
 $   \text{loss}_{\text{keep}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ p_{1|t}(x_t^i | x_t) - 1 \right]$
 
-   - 当状态未变化时，最大化保持当前状态的概率
-   - $(p_{1|t}(x_t^i | x_t) \rightarrow 1)$ 时损失最小化
+- 当状态未变化时，最大化保持当前状态的概率
+- $(p_{1|t}(x_t^i | x_t) \rightarrow 1)$ 时损失最小化
 
 状态转移优化（当 ($x_t^i \neq x_1^i$)）
 
@@ -95,6 +100,7 @@ $
    - 本质是负对数似然损失（NLL）
 
 5.采样
+
 facebook 的代码更多的是计算出$p_{1|t}^i(\cdot|X_t)$后，利用多项式采样每一个token的值
 $$\begin{align*}
     & X_1^i \sim p_{1|t}^i(\cdot|X_t)\\

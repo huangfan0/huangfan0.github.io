@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'Generative Recommendation with Continuous-Token Diffusion'
 date: 2025-06-03
 permalink: /posts/2025/06/03
