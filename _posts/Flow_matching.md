@@ -1,5 +1,5 @@
 ---
-title: 'flow matching'
+title: 'flow-matching'
 date: 2025-07-20
 permalink: /posts/2025/07/20
 tags:
