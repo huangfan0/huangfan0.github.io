@@ -1,5 +1,5 @@
 ---
-title: '_posts/2 flow matching 总结.md'
+title: '_posts/2 flow matching.md'
 date: 2025-07-20
 permalink: /posts/2025/07/20
 tags:
