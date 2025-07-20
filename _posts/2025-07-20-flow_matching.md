@@ -10,11 +10,13 @@ tags:
 
 ## 一.背景介绍
 
-flow matching 本质是一种流映射关系，建立一个源分布与目标分布的映射模型，具体是通过学习概率路径\[p_t(x)\]和速度场（向量场）\[v_t(x)\]来链接源分布于目标分布, 流flow表示为$\phi_t(x)$,他们之间的关系可以表示为：
+flow matching 本质是一种流映射关系，建立一个源分布与目标分布的映射模型，具体是通过学习概率路径$$p_t(x)$$和速度场（向量场）$$v_t(x)$$来链接源分布于目标分布, 流flow表示为$$\phi_t(x)$$,他们之间的关系可以表示为：
+
 $$
 \frac{d\phi_t(x)}{dt} = \mathbf{v}(\phi_t(x), t)
 $$
-所以flow matching的目标为学习一个向量场$v_t(x)$，使得他可以生成流$\phi_t(x)$，流上的每一个点为路径$p_t(x)$，并且满足分布$p_0=p(x_0), p_1=q(x_1)$,时间$t$通常为0到1,其中他们都必须满足连续性方程。
+
+所以flow matching的目标为学习一个向量场$$v_t(x)$$，使得他可以生成流$$\phi_t(x)$$，流上的每一个点为路径$$p_t(x)$$，并且满足分布$$p_0=p(x_0), p_1=q(x_1)$$,时间$t$通常为0到1,其中他们都必须满足连续性方程。
 
 ![method](https://huangfan0.github.io/images/2-1.png)
 
@@ -32,10 +34,12 @@ $$
 $$\nabla_{\theta} \mathcal{L}_{\text{FM}}(\theta) = \nabla_{\theta} \mathcal{L}_{\text{CFM}}(\theta)$$
 
 2.最优传输速度场
-条件需要满足原目标分布为高斯分布，$p1$均值为$X_1$,方差为一个很小的数值$\sigma_t(x_1)$,,因此，$\mu_t(x) = t x_1, \text{ and } \sigma_t(x) = 1 - (1 - \sigma_{\min})t.$
+条件需要满足原目标分布为高斯分布，$p1$均值为$X_1$,方差为一个很小的数值$$\sigma_t(x_1)$$,,因此，$$\mu_t(x) = t x_1, \text{ and } \sigma_t(x) = 1 - (1 - \sigma_{\min})t.$$
 
 此时目标函数可以简化为：
+
 $$u_t(x|x_1) = \frac{x_1 - (1 - \sigma_{\min})x}{1 - (1 - \sigma_{\min})t},u_t(x|x_1) \approx x_1 - x_0$$
+
 此时是匀速直线运动
 
 3.Mean Flows for One-step Generative Modeling
@@ -49,7 +53,7 @@ $$
 \text{where} \quad u_{\text{tgt}} = v(z_t, t) - (t - r) \left( v(z_t, t) \partial_z u_{\theta} + \partial_t u_{\theta} \right),$$
 3.最简单的CNF流程
 
-① 线性插值采样   $X_t = tX_1 + (1 - t)X_0 \sim p_t.$
+① 线性插值采样   $$X_t = tX_1 + (1 - t)X_0 \sim p_t.$$
 
 ② 神经网络拟合学习速度场，学习目标函数
 
@@ -63,8 +67,10 @@ $$
 
 1.离散的源分布可以使用masked token， uniform distribution 来等价连续的flow中的源分布$p$
 
-2.插值的使用delta function 来取值，通过一个调度器$\kappa_t$来表示$x_t$取值的$x_0$或$x_1$的概率
+2.插值的使用delta function 来取值，通过一个调度器$$\kappa_t$$来表示$$x_t$$取值的$$x_0$$或$$x_1$$的概率
+
 $$p_t(x^i|x_0, x_1) = (1 - \kappa_t) \delta_{x_0}(x^i) + \kappa_t \delta_{x_1}(x^i)$$
+
 $$\delta(x, z) = 
   \begin{cases} 
    1 & \text{if } x = z, \\
@@ -75,29 +81,30 @@ $$
 3.离散的flow习惯学习的路径，通过路径可以推断速度然后采样
 
 路径的表示：
-$p_{t|0,1}^i(x^i|x_0, x_1) = \kappa_t \delta(x^i, x_1^i) + (1 - \kappa_t) \delta(x^i, x_0^i),$
+$$p_{t|0,1}^i(x^i|x_0, x_1) = \kappa_t \delta(x^i, x_1^i) + (1 - \kappa_t) \delta(x^i, x_0^i),$$
 
 速度的表示：
-$ u_t^i(y^i, x^i | x_1) = \frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ \delta(y^i, x_1^i) - \delta(y^i, x^i) \right] $ 
+$$ u_t^i(y^i, x^i | x_1) = \frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ \delta(y^i, x_1^i) - \delta(y^i, x^i) \right]$ $ 
 
 4.损失函数的学习
+
 $$
 \ell_i(x_1, x_t, t) = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ p_{1|t}(x_t^i | x_t) - \delta_{x_1^i}(x_t^i) + (1 - \delta_{x_1^i}(x_t^i)) \log p_{1|t}(x_1^i | x_t) \right]
 $$
 
-状态保持强化（当 ($x_t^i = x_1^i$）)
+状态保持强化（当 ($$ x_t^i = x_1^i $$ ）)
 
-$   \text{loss}_{\text{keep}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ p_{1|t}(x_t^i | x_t) - 1 \right]$
+$$ \text{loss}_{\text{keep}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \left[ p_{1|t}(x_t^i | x_t) - 1 \right]$$
 
 - 当状态未变化时，最大化保持当前状态的概率
-- $(p_{1|t}(x_t^i | x_t) \rightarrow 1)$ 时损失最小化
+- $$(p_{1|t}(x_t^i | x_t) \rightarrow 1)$$ 时损失最小化
 
-状态转移优化（当 ($x_t^i \neq x_1^i$)）
+状态转移优化（当 ($$x_t^i \neq x_1^i$$)）
 
-$   \text{loss}_{\text{transfer}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \log p_{1|t}(x_1^i | x_t)
-$
-   - 当状态应变化时，最大化目标状态的对数似然
-   - 本质是负对数似然损失（NLL）
+$$ \text{loss}_{\text{transfer}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \log p_{1|t}(x_1^i | x_t)$$
+
+- 当状态应变化时，最大化目标状态的对数似然
+- 本质是负对数似然损失（NLL）
 
 5.采样
 
