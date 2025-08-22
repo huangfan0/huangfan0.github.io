@@ -9,7 +9,7 @@ redirect_from:
 
 
 
-<iframe src="/files/01_haungfan_cv.pdf" width="800" height="900"></iframe>
+<iframe src="/files/01haungfan_cv.pdf" width="800" height="900"></iframe>
 {% include base_path %}
 
 <!-- Education
