@@ -110,7 +110,7 @@ $$ \text{loss}_{\text{transfer}} = -\frac{\dot{\kappa}_t}{1 - \kappa_t} \log p_{
 
 5.采样
 
-facebook 的代码更多的是计算出$p_{1|t}^i(\cdot|X_t)$后，利用多项式采样每一个token的值
+facebook 的代码更多的是计算出$$p_{1|t}^i(\cdot|X_t)$$后，利用多项式采样每一个token的值
 $$\begin{align*}
     & X_1^i \sim p_{1|t}^i(\cdot|X_t)\\
     & \lambda^i \gets \sum_{x^i \ne X_t^i} u_t^i(x^i, X_t^i|X_1^i)\\
